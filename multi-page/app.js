@@ -20,6 +20,6 @@ env.handlebars.registerHelper('stripTags', function(string) {
 });
 
 app.listen(3000, () => {
-    console.log("We've now got a server!");
-    console.log('Your routes will be running on http://localhost:3000');
+    console.log("The server is up!");
+    console.log("Your routes are running on http://localhost:3000");
 });
