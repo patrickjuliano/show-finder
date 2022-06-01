@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Show Finder</title>
+    <link rel="stylesheet" href="/public/css/main.css">
+  </head>
+  <body>
+    <header>
+        <h1 id="header">Show Finder</h1>
+    </header>
+    <main>
+        <p>Search the <span class="bold">TV Maze API</span> for information about your favorite shows!</p>
+        <form id="searchForm" method="POST" action="/">
+            <label for="searchTerm">Search</label>
+            <input id="searchTerm" type="text" name="showSearchTerm" />
+            <button form="searchForm" type="submit">Submit</button>
+        </form>
+        <p id="error" hidden>Error: Search cannot be empty</p>
+        <section id="results">
+          <h1 id="resultsHeader" hidden>Showing results for <span class="resultsTerm italics"></span></h1>
+          <p id="noResults" hidden>We're sorry, but no results were found for <span class="resultsTerm italics"></span>.</p>
+          <ul id="showList" hidden></ul>
+        </section>
+        <article id="show" hidden></article>
+        <a id="homeLink" href="/" hidden>Back to All Shows</a>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="public/js/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<article>
+    <h1>{{show.name}}</h1>
+    <img src={{#if show.image.medium}}"{{show.image.medium}}"{{else}}"https://static.thenounproject.com/png/140281-200.png"{{/if}} alt="{{show.name}}" />
+    <dl>
+        <dt class="bold">Language</dt>
+        <dd>{{#if show.language}}{{show.language}}{{else}}N/A{{/if}}</dd>
+        <dt class="bold">Genres</dt>
+        <dd>
+            {{#if show.genres}}
+                <ul>
+                    {{#each show.genres}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            {{else}}
+                N/A
+            {{/if}}
+        </dd>
+        <dt class="bold">Average Rating</dt>
+        <dd>{{#if show.rating.average includeZero=true}}{{show.rating.average}}{{else}}N/A{{/if}}</dd>
+        <dt class="bold">Network</dt>
+        <dd>{{#if show.network.name}}{{show.network.name}}{{else}}N/A{{/if}}</dd>
+        <dt class="bold">Summary</dt>
+        <dd>{{#if show.summary}}{{stripTags show.summary}}{{else}}N/A{{/if}}</dd>
+    </dl>
+    <a id="homeLink" href="/">Back to All Shows</a>
+</article>

@@ -1,0 +1,15 @@
+<section>
+  <h1>Showing results for <span class="italics">{{showSearchTerm}}</span></h1>
+  {{#if shows}}
+    <ul>
+      {{#each shows}}
+        <li>
+          <a href="show/{{this.show.id}}">{{this.show.name}}</a>
+        </li>
+      {{/each}}
+    </ul>
+  {{else}}
+    <p class="show-not-found">We're sorry, but no results were found for <span class="italics">{{showSearchTerm}}</span>.</p>
+  {{/if}}
+</section>
+<a id="homeLink" href="/">Back to All Shows</a>

@@ -1,0 +1,68 @@
+html {
+    background-color: black;
+}
+
+body {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.italics, label {
+    font-style: italic;
+}
+
+label {
+    font-weight: 100;
+}
+
+img {
+    border: 2px solid white;
+    background-color: white;
+}
+
+input, button {
+    padding: 3px 6px;
+    margin-left: 2px;
+    border: 1px solid white;
+    border-radius: 2px;
+    background-color: white;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+a:link {
+    color: pink;
+}
+
+a:visited {
+    color: rgb(192, 127, 137);
+}
+
+a:hover {
+    color: hotpink;
+}
+
+dt {
+    margin: 8px 0px 4px 0px;
+    text-decoration: underline;
+    text-underline-offset: 1px;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#error {
+    color: red;
+}
